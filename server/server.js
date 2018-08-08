@@ -10,6 +10,6 @@ app.set('views', path.join(__dirname, '../client'));
 app.use(express.static(path.join(__dirname, '../client')));
 app.use(bodyParser.json({limit: '50mb'}));
 app.use(bodyParser.urlencoded({limit: '50mb', extended: false}));
-mongoose.connect('mongodb://172.30.32.105:27017/expense-mgr');
+mongoose.connect('mongodb://userG6R:iHiAXbKAMw70Xi3F@172.30.32.105:27017/expense-mgr');
 app.use('/', router);
 module.exports=app;
